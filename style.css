@@ -1,0 +1,380 @@
+body{
+    margin: 0!important;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandeiras{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+    height: 150px;
+    margin: 30px;
+    border: 5px solid black;
+}
+
+/*Dinamarca*/
+
+.dinamarca{
+    display: flex;
+    background-color: red;
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    z-index: 0;
+}
+
+.linhaVertical{
+    width: 10%;
+    height: 100%;
+    margin-left: 30%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.linhaHorizontal{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+/*Ucrania*/
+
+.ucrania{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+}
+
+.bottom{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+}
+
+/*Russia*/
+
+.russia{
+    display: flex;
+    flex-direction: column;
+}
+
+.topR{
+    width: 100%;
+    height: 33.3%;
+    background-color: white;
+}
+
+.midR{
+    width: 100%;
+    height: 33.4%;
+    background-color: blue;
+}
+
+.bottomR{
+    width: 100%;
+    height: 33.3%;
+    background-color: red;
+}
+
+/*Barbados*/
+
+.barbados{
+    display: flex;
+}
+
+.leftB{
+    height: 100%;
+    width: 33.3%;
+    background-color: blue;
+}
+
+.midB{
+    height: 100%;
+    width: 33.4%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midB img{
+    max-width: 90%;
+}
+
+.rightB{
+    height: 100%;
+    width: 33.3%;
+    background-color: blue;
+}
+
+/*Libano*/
+
+.libano{
+    display: flex;
+    flex-direction: column;
+}
+
+.topL{
+    width: 100%;
+    height: 25%;
+    background-color: red;
+}
+
+.midL{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midL img{
+    max-height: 90%;
+}
+
+
+.bottomL{
+    width: 100%;
+    height: 25%;
+    background-color: red;
+}
+
+/*Brasil*/
+
+.brasil {
+    position: relative;
+    background-color: #16b83e;
+    width: 250px;
+    height: 150px;
+  }
+
+.brasil .losangue:before,
+.brasil .losangue:after {
+  position: absolute;
+}
+
+.brasil .losangue {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.brasil .losangue:before,
+.brasil .losangue:after {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 20px;
+  right: 20px;
+}
+
+.brasil .losangue:before {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-bottom: 65px solid #ffe11f;
+  top: 10px;
+}
+
+.brasil .losangue:after {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-top: 65px solid #ffe11f;
+  bottom: 10px;
+}
+
+.brasil .circle {
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    background-color: #1651b8;
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+  
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+  }
+
+  .brasil .circle,
+.brasil .circle:before,
+.brasil .circle:after {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.brasil .circle:before,
+.brasil .circle:after {
+  width: 90px;
+  height: 40px;
+  -ms-transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+  transform: rotate(14deg);
+}
+
+.brasil .circle:before {
+  z-index: 3;
+  content: '';
+  margin-top: -20px;
+  margin-left: -45px;
+  background: #fff;
+}
+
+.brasil .circle:after {
+  z-index: 4;
+  content: '';
+  margin-top: -10px;
+  margin-left: -48px;
+  background-color: #1651b8;
+}
+
+/*Eua*/
+
+.flag {
+    width: 250px;
+    height: 150px;
+    /* margin: 5% auto 1% auto; */
+    position: relative;
+    box-shadow: 3px 3px 9px 3px rgba(0, 0, 0, 0.4);
+  }
+  .stripe {
+    height: 12px;
+  }
+  
+  .stripe:nth-child(odd){
+    background-color: #B22234; 
+  }
+  .stripe:nth-child(even){
+    background-color: #FFFFFF;
+  }
+  .canton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 75px;
+    background-color: #3C3B6E;
+    padding: 2px 0 3px 0;
+    margin: 0;
+  }
+  .star-row {
+    height: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .star-row:nth-child(odd){
+     justify-content: space-around;
+  }
+  .star-row:nth-child(even){
+      justify-content: space-evenly;
+  }
+  .star {
+    display: block;
+    color: #FFFFFF;
+  }
+
+
+/*Grécia*/
+
+
+.grecia{
+    display: flex;
+    flex-direction: column;
+}
+
+.topG{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+}
+
+
+
+.leftG{
+    display: flex;
+    width: 35%;
+    height: 100%;
+    background-color: #005f8b;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.linhaVerticalG{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.linhaHorizontalG{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+.rightG{
+    width: 65%;
+    height: 100%;
+}
+
+.bottomG{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+.linhaAzul{
+    width: 100%;
+    height: 20%;
+    background-color: #005f8b;
+}
+.linhaBranca{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
+.linhaAzul2{
+    width: 100%;
+    height: 20%;
+    background-color: #005f8b;
+}
+.linhaBranca2{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
